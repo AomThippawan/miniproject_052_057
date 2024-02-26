@@ -272,10 +272,10 @@ class _HomeScreenState extends State<HomeScreen> {
         context: context,
         builder: (BuildContext context) {
           return AlertDialog(
-            backgroundColor: Colors.grey.shade900,
+            backgroundColor: Colors.indigo.shade300,
             icon: const Icon(
               Icons.info,
-              color: Colors.grey,
+              color: Colors.white,
             ),
             title: const Text(
               'Are you sure you want to delete?',
@@ -289,7 +289,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         Navigator.pop(context, true);
                       },
                       style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.green),
+                          backgroundColor: Colors.green.shade200),
                       child: const SizedBox(
                         width: 60,
                         child: Text(
@@ -302,8 +302,8 @@ class _HomeScreenState extends State<HomeScreen> {
                       onPressed: () {
                         Navigator.pop(context, false);
                       },
-                      style:
-                          ElevatedButton.styleFrom(backgroundColor: Colors.red),
+                      style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.red.shade300),
                       child: const SizedBox(
                         width: 60,
                         child: Text(
